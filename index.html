@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Jogo da Velha</title>		
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<script type="text/javascript" src="application.js"></script>
+	</head>
+<body>
+    <div class="cabecalho">
+		<input type="button" onClick="history.go(0)" value="Reset"/>
+		<input type="submit" onClick="limparTabuleiro()" value="Limpar"/>	
+	</div>
+	<div>
+		<table>
+			<tr>
+				<td>Jogador X</td>
+				<td>Jogador O</td>
+			</tr>
+			<tr>
+				<td id="placarX"></td>
+				<td id="placarO"></td>
+			</tr>	
+		</table>
+	</div>	
+	<div id="tabuleiro">
+        <div class="linha">
+            <div class="campo" id="c_0_0" onclick="marcar(this)"></div>
+            <div class="campo" id="c_0_1" onclick="marcar(this)"></div>
+            <div class="campo" id="c_0_2" onclick="marcar(this)"></div>
+        </div>
+        <div class="linha">
+            <div class="campo" id="c_1_0" onclick="marcar(this)"></div>
+            <div class="campo" id="c_1_1" onclick="marcar(this)"></div>
+			<div class="campo" id="c_1_2" onclick="marcar(this)"></div>
+        </div>
+        <div class="linha">
+            <div class="campo" id="c_2_0" onclick="marcar(this)"></div>
+            <div class="campo" id="c_2_1" onclick="marcar(this)"></div>
+			<div class="campo" id="c_2_2" onclick="marcar(this)"></div>
+		</div>
+    </div>
+	</body>
+</html>	
